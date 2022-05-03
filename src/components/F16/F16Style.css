@@ -1,0 +1,37 @@
+.fsixteen {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("../../accessories/1573279922.skunkworth_f-16_fighting_falcon.jpeg")
+    no-repeat center center/cover;
+}
+
+.fsixteen:before {
+  content: "";
+  position: absolute;
+
+  z-index: -1;
+}
+
+.fsixteen .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 2%;
+  top: 10%;
+  width: 50%;
+}
+
+.fsixteen .content p {
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 940px) {
+  .data-content {
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.7);
+  }
+}
